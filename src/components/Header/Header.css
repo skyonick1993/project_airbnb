@@ -1,0 +1,178 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 80px;
+  padding-right: 80px;
+  top: 0;
+  box-shadow: rgb(0 0 0 / 8%) 0px 1px 12px;
+  max-width: 1920px;
+  margin: auto;
+}
+
+.header__logo {
+  object-fit: contain;
+  height: 80px;
+}
+
+.header__left {
+  display: flex;
+  justify-content: flex-start;
+  width: 25vw;
+}
+
+.header__center {
+  display: flex;
+  align-items: center;
+  border: 1px solid lightgray;
+  padding: 20px 5px 20px 20px;
+  height: 30px;
+  border-radius: 99px;
+}
+
+.header__center > input {
+  border: none;
+  width: 200px;
+  outline-width: 0;
+  background: transparent;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 25vw;
+}
+
+.header__profile__dropdown {
+  padding: 10px 0px;
+  width: 250px;
+  font-size: 17px;
+  font-weight: 400;
+  border-radius: 8px;
+  box-shadow: rgb(0 0 0 / 15%) 0px 2px 6px, rgb(0 0 0 / 7%) 0px 0px 0px 1px;
+  color: black;
+  background-color: white;
+}
+
+.header__profile__dropdown__item {
+  padding: 8px 18px;
+}
+
+.header__profile__dropdown__item:hover {
+  background-color: rgba(231, 229, 229, 0.384);
+  cursor: pointer;
+}
+
+.header__login__label {
+  top: 0%;
+  transform: translateY(-50%);
+  font-size: 11px;
+  color: rgba(37, 99, 235, 1);
+  pointer-events: none;
+}
+
+.header__login__focusLabel {
+  top: 0% !important;
+  transform: translateY(-50%) !important;
+  font-size: 11px !important;
+  color: rgba(37, 99, 235, 1) !important;
+}
+
+.header__login__labelBirthday {
+  top: 0%;
+  transform: translateY(-50%);
+  font-size: 11px;
+  color: rgba(70, 70, 70, 1);
+  pointer-events: none;
+}
+
+.header__login__input:not(:focus) + label {
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+}
+
+.header__login__input:not(:focus) + label {
+  color: rgba(70, 70, 70, 1);
+}
+
+.header__login__input {
+  border-width: 1px;
+}
+
+.header__login__input:focus-within {
+  outline: none;
+  border-color: rgba(37, 99, 235, 1);
+}
+
+.header__login__focusInput {
+  outline: none !important;
+  border-color: rgba(37, 99, 235, 1) !important;
+}
+
+.header__login__btn {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 12px;
+  border: none;
+  background: linear-gradient(
+    to right,
+    rgb(230, 30, 77) 0%,
+    rgb(227, 28, 95) 50%,
+    rgb(215, 4, 102) 100%
+  );
+  color: rgb(255, 255, 255);
+  width: 100%;
+}
+
+.header__login__btn:hover {
+  filter: brightness(110%);
+}
+
+.header__guest__dropdown {
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 4px;
+  padding: 16px;
+  box-shadow: rgb(0 0 0 / 15%) 0px 2px 6px, rgb(0 0 0 / 7%) 0px 0px 0px 1px;
+  color: black;
+  background-color: white;
+  position: absolute;
+  width: 30%;
+  top: 90%;
+  right: 8%;
+}
+
+input[type="radio"] + label span {
+  transition: background 0.2s, transform 0.2s;
+}
+
+input[type="radio"] + label span:hover,
+input[type="radio"] + label:hover span {
+  transform: scale(1.2);
+}
+
+input[type="radio"]:checked + label span {
+  background-color: #3490dc;
+  box-shadow: 0px 0px 0px 2px white inset;
+}
+
+input[type="radio"].female:checked + label span {
+  background-color: #f35369 !important;
+  box-shadow: 0px 0px 0px 2px white inset;
+}
+
+.ant-badge-dot {
+  width: 7px !important;
+  min-width: 7px !important;
+  height: 7px !important;
+}
+
+.ant-badge-count {
+  min-width: 18px !important;
+  height: 18px !important;
+  font-size: 12px !important;
+  line-height: 18px !important;
+}

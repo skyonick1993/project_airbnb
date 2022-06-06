@@ -1,0 +1,22 @@
+.homeMenu {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.homeInfo {
+  background-image: url("https://a0.muscache.com/im/pictures/5b4dc94a-0b4c-4c27-b50f-9c5a5b93c775.jpg?im_w=1440");
+  max-width: 1280px;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.homeInfo__content {
+  width: 47.5%;
+  padding-left: 80px;
+  padding-right: 80px;
+}

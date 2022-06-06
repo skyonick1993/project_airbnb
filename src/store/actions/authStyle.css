@@ -1,0 +1,25 @@
+.error_message > div {
+  background-color: #fff2f0;
+  border: 1px solid #ffccc7;
+  border-radius: 4px;
+  margin-top: 3vh;
+  color: black;
+}
+
+.success_message > div {
+  background-color: #f6ffed;
+  border: 1px solid #b7eb8f;
+  border-radius: 4px;
+  margin-top: 3vh;
+  color: black;
+}
+
+.ant-message-error {
+  display: flex;
+  align-items: center;
+}
+
+.ant-message-success {
+  display: flex;
+  align-items: center;
+}
